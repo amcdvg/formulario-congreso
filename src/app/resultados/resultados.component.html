@@ -1,0 +1,32 @@
+<div class="resultados-container">
+  <h2>{{ questions[currentQuestionIndex] }}</h2>
+
+  <!-- Card para gráficos -->
+  <div class="card">
+    <div class="card-header">
+      <h3>Gráficos de Respuestas</h3>
+    </div>
+    <div class="card-body">
+      <div class="chart-grid">
+        <div class="bar-chart">
+          <h4>Gráfico de Barras</h4>
+          <canvas id="barChart"></canvas>
+        </div>
+        <div class="pie-chart">
+          <h4>Gráfico de Pastel</h4>
+          <canvas id="pieChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navegación -->
+  <div class="navigation-buttons">
+    <button (click)="preguntaAnterior()" [disabled]="currentQuestionIndex === 0">Anterior</button>
+    <button (click)="siguientePregunta()" [disabled]="currentQuestionIndex === respuestas.length - 1">Siguiente</button>
+  </div>
+</div>
+
+
+
+

@@ -1,0 +1,52 @@
+/* Estilo del navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('https://media.istockphoto.com/id/1309453432/es/v%C3%ADdeo/fondo-de-movimiento-azul-corporativo-abstracto-bucle-sin-costuras.jpg?s=640x640&k=20&c=DsoM3XHKEezYffGkSexo8rbcQyys8LFHHswKUiRr80Q='); /* Ruta a la imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el navbar */
+  background-position: center; /* Centra la imagen */
+  padding: 10px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white; /* Asegura que el texto sea legible sobre la imagen */
+}
+
+/* Logo del navbar */
+.logo {
+  display: flex;
+  align-items: center;
+  color: #ffffff; /* Texto blanco */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 40px; /* Tamaño del logo */
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%; /* Logo en forma de círculo */
+}
+
+/* Botones del navbar */
+.nav-links {
+  display: flex;
+  gap: 15px; /* Espaciado entre botones */
+}
+
+.nav-btn {
+  background-color: transparent; /* Fondo transparente */
+  color: #f5f6f7; /* Texto en color claro */
+  border: 1px solid #ffffff; /* Bordes blancos */
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #007bff; /* Azul más claro */
+  color: #ffffff; /* Texto blanco */
+}
